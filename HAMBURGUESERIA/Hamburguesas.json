@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "doble bacon",
+        "precio": 1600,
+        "tipo": "doble",
+        "aderezo": "mostaza",
+        "cantidad": 430
+    },
+    {
+        "id": 2,
+        "nombre": "completa",
+        "precio": 2000,
+        "tipo": "simple",
+        "aderezo": "mayonesa",
+        "cantidad": 5
+    },
+    {
+        "id": 3,
+        "nombre": "clasica",
+        "precio": 2000,
+        "tipo": "doble",
+        "aderezo": "ketchup",
+        "cantidad": 10
+    }
+]

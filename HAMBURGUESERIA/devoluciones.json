@@ -1,0 +1,18 @@
+[
+    {
+        "numeroPedido": 4,
+        "causa": "feo"
+    },
+    {
+        "numeroPedido": 6,
+        "causa": "podrido"
+    },
+    {
+        "numeroPedido": 7,
+        "causa": "crudo"
+    },
+    {
+        "numeroPedido": 8,
+        "causa": "crudo"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "_id": 795,
+        "_sabor": "Calabresa",
+        "_precio": 399,
+        "_tipo": "Piedra",
+        "_cantidad": 1
+    },
+    {
+        "_id": 892,
+        "_sabor": "Muzzarella",
+        "_precio": 250,
+        "_tipo": "Piedra",
+        "_cantidad": 2
+    },
+    {
+        "_id": 438,
+        "_sabor": "Morron",
+        "_precio": 250,
+        "_tipo": "Piedra",
+        "_cantidad": 1
+    },
+    {
+        "_id": 196,
+        "_sabor": "Albahaca",
+        "_precio": 299,
+        "_tipo": "Piedra",
+        "_cantidad": null
+    },
+    {
+        "_id": 119,
+        "_sabor": "Champignon",
+        "_precio": 350,
+        "_tipo": "Piedra",
+        "_cantidad": 2
+    },
+    {
+        "_id": 6,
+        "_sabor": "Champignon",
+        "_precio": 299,
+        "_tipo": "Molde",
+        "_cantidad": 300
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "numeroPedido": 2,
+        "descuento": 10,
+        "estado": "vencido",
+        "vencimiento": "2023-06-12"
+    },
+    {
+        "numeroPedido": 5,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 3,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 9,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 12,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 15,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 16,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 17,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 1,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 4,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 6,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 7,
+        "descuento": 10,
+        "estado": "usado",
+        "vencimiento": "2023-06-22"
+    },
+    {
+        "numeroPedido": 8,
+        "descuento": 10,
+        "estado": "valido",
+        "vencimiento": "2023-06-22"
+    }
+]

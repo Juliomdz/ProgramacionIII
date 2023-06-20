@@ -1,0 +1,483 @@
+{
+	"info": {
+		"_postman_id": "64eae731-ca5b-4bdb-ac81-093c79ddde05",
+		"name": "PRIMER PARCIAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Parte4",
+			"item": [
+				{
+					"name": "CARGA HAMBURGUESA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "clasica",
+									"type": "default"
+								},
+								{
+									"key": "precio",
+									"value": "2000",
+									"type": "default"
+								},
+								{
+									"key": "tipo",
+									"value": "doble",
+									"type": "default"
+								},
+								{
+									"key": "aderezo",
+									"value": "ketchup",
+									"type": "default"
+								},
+								{
+									"key": "cantidad",
+									"value": "5",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/xampp/htdocs/HAMBURGUESERIA/ImagenesDeHamburguesas/ClasicaDoble.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/HAMBURGUESERIA/index.php?cargar=cargar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"HAMBURGUESERIA",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "cargar",
+									"value": "cargar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONSULTAR HAMBURGUESA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "completa",
+									"type": "default"
+								},
+								{
+									"key": "tipo",
+									"value": "simple",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/HAMBURGUESERIA/index.php?consultar=consultar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"HAMBURGUESERIA",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "consultar",
+									"value": "consultar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VENDER HAMBURGUESA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "clasica",
+									"type": "default"
+								},
+								{
+									"key": "tipo",
+									"value": "doble",
+									"type": "default"
+								},
+								{
+									"key": "mail",
+									"value": "pepe@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "aderezo",
+									"value": "ketchup",
+									"type": "default"
+								},
+								{
+									"key": "cantidad",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/xampp/htdocs/HAMBURGUESERIA/ImagenesDeHamburguesas/ClasicaDoble.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/HAMBURGUESERIA/index.php?vender=vender",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"HAMBURGUESERIA",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "vender",
+									"value": "vender"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONSULTAR VENTAS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Nombre",
+									"value": "completa",
+									"type": "default"
+								},
+								{
+									"key": "Tipo",
+									"value": "simple",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/HAMBURGUESERIA/index.php?consultarVentas=consultarVentas&fecha=2023-06-19&fechaDesde=2023-06-18&fechaHasta=2023-06-20&mailUsuario=pepe@gmail.com&tipoHamburguesa=simple&ketchup=ketchup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"HAMBURGUESERIA",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "consultarVentas",
+									"value": "consultarVentas"
+								},
+								{
+									"key": "fecha",
+									"value": "2023-06-19"
+								},
+								{
+									"key": "fechaDesde",
+									"value": "2023-06-18"
+								},
+								{
+									"key": "fechaHasta",
+									"value": "2023-06-20"
+								},
+								{
+									"key": "mailUsuario",
+									"value": "pepe@gmail.com"
+								},
+								{
+									"key": "tipoHamburguesa",
+									"value": "simple"
+								},
+								{
+									"key": "ketchup",
+									"value": "ketchup"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MODIFICAR VENTA",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numero\": 1,\r\n  \"mail\": \"tito@gmail.com\",\r\n  \"nombre\": \"clasica\",\r\n  \"tipo\": \"simple\",\r\n  \"aderezo\": \"ketchup\",\r\n  \"cantidad\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/HAMBURGUESERIA/index.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"HAMBURGUESERIA",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "numero",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BORRAR VENTA",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "numero",
+								"value": "3",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numero\": 11\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/HAMBURGUESERIA/index.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"HAMBURGUESERIA",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "numero",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DEVOLVER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "numero",
+									"value": "7",
+									"type": "default"
+								},
+								{
+									"key": "causa",
+									"value": "crudo",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/julio/Downloads/enojado.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/HAMBURGUESERIA/index.php?devolver",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"HAMBURGUESERIA",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "devolver",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VENDER HAMBURGUESA ConCupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "clasica",
+									"type": "default"
+								},
+								{
+									"key": "tipo",
+									"value": "doble",
+									"type": "default"
+								},
+								{
+									"key": "mail",
+									"value": "pepe@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "aderezo",
+									"value": "ketchup",
+									"type": "default"
+								},
+								{
+									"key": "cantidad",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/xampp/htdocs/HAMBURGUESERIA/ImagenesDeHamburguesas/ClasicaDoble.jpg"
+								},
+								{
+									"key": "numeroCupon",
+									"value": "4",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/HAMBURGUESERIA/index.php?vender=vender",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"HAMBURGUESERIA",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "vender",
+									"value": "vender"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONSULTAR DEVOLUCIONES",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Nombre",
+									"value": "completa",
+									"type": "default"
+								},
+								{
+									"key": "Tipo",
+									"value": "simple",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/HAMBURGUESERIA/index.php?consultarDevoluciones=consultarDevoluciones&devoluciones=devoluciones&cupones=cupones&detalleDevoluciones=detalleDevoluciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"HAMBURGUESERIA",
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "consultarDevoluciones",
+									"value": "consultarDevoluciones"
+								},
+								{
+									"key": "devoluciones",
+									"value": "devoluciones"
+								},
+								{
+									"key": "cupones",
+									"value": "cupones"
+								},
+								{
+									"key": "detalleDevoluciones",
+									"value": "detalleDevoluciones"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

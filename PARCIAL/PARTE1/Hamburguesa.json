@@ -1,0 +1,26 @@
+[
+    {
+        "_id": 5,
+        "_nombre": null,
+        "_precio": 2000,
+        "_tipo": "simple",
+        "_aderezo": "Mayonesa",
+        "_cantidad": 2
+    },
+    {
+        "_id": 3,
+        "_nombre": null,
+        "_precio": 2000,
+        "_tipo": "simple",
+        "_aderezo": "Mayonesa",
+        "_cantidad": 14
+    },
+    {
+        "_id": 7,
+        "_nombre": "completa",
+        "_precio": 2000,
+        "_tipo": "simple",
+        "_aderezo": "mayonesa",
+        "_cantidad": 8
+    }
+]

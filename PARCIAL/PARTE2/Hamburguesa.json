@@ -1,0 +1,10 @@
+[
+    {
+        "_id": 2,
+        "_nombre": "completa",
+        "_precio": 2000,
+        "_tipo": "simple",
+        "_aderezo": "mayonesa",
+        "_cantidad": 2
+    }
+]
